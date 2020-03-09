@@ -94,8 +94,8 @@
                         <div class="text-container">
                             <h1><span class="turquoise">ERC1753</span>&nbsp;</h1>
                             <h1>Smart Contract Interface for Licenses</h1>
-<p class="p-large">ERC1753 is the Ethereum standard for the issuance of licenses, permits and grants (Licences).</p>
-</div> <!-- end of text-container -->
+                            <p class="p-large">ERC1753 is the Ethereum standard for the issuance of licenses, permits and grants (Licences).</p>
+                    </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
                         <div class="image-container">
@@ -115,7 +115,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h4>Standard used by&nbsp;&nbsp;</h4>
-                  <!-- Image Slider -->
+                    <!-- Image Slider -->
                     <div class="slider-container">
                         <div class="swiper-container image-slider">
                             <div class="swiper-wrapper">
@@ -160,12 +160,6 @@
     </div> <!-- end of slider-1 -->
     <!-- end of customers -->
 
-
-    <!-- About -->
-<!-- end of cards-1 -->
-    <!-- end of about -->
-
-
     <!-- Details 1 -->
     <div class="basic-1" id="about">
         <div class="container">
@@ -181,7 +175,7 @@
                       <p>- Allowing the government authority responsible for the Licence to amend, revoke, renew, suspend or deny the issuance of the Licence, or to impose conditions or penalties for non-compliance; and </p>
                       <p>- Usually issued only after the payment of a fee or the meeting of some criteria.</p>
                       <p>Additionally, a Licence may be granted in respect of certain information. For example, a Licence may be issued in respect of a vehicle registration number and attaching to that specific registered vehicle. </p>
-</div> <!-- end of text-container -->
+                </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="image-container">
@@ -208,7 +202,7 @@
                         <h2>Motivation</h2>
                       <p> Governments are responsible for the issuance and management of Licences. However, maintaining and sharing this data can be complicated and inefficient. The granting of Licences usually requires the filing of paper-based application forms, manual oversight of applicable legislation and data entry into registries, as well as the issuance of paper-based Licences. If individuals wish to sight information on Licence registries, they often need to be present at the government office and complete further paper-based enquiry forms in order to access that data (if available publicly). ​ </p>
                       <p>This EIP seeks to define a standard that will allow for the granting and/or management of Licences via Ethereum smart contracts. The motivation is, in essence, to address the inefficiencies inherent in current licencing systems.</p>
-</div> <!-- end of text-container -->
+                    </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -314,7 +308,7 @@
                 </div>
                 <div class="col-lg-12">
                   <p class="text-left text-uppercase"><strong> Notes:</strong></p>
-<p class="text-left">-&nbsp; The following specifications use syntax from Solidity <strong>0.4.17</strong> (or above) </p>
+                  <p class="text-left">-&nbsp; The following specifications use syntax from Solidity <strong>0.4.17</strong> (or above) </p>
                   <p class="text-left">- Callers MUST handle false from returns (bool success). Callers MUST NOT assume the false is never returned! </p>
                   <p class="text-left"><strong>name</strong>&nbsp;</p>
                   <p class="text-left"> Returns the name of the permit - e.g. "MyPermit". </p>
@@ -435,27 +429,25 @@
     <!-- end of rationale -->
 
 
-
-
     <!-- Testimonials -->
     <div class="slider-2">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
               <div class="image-container">
-                        <img class="img-fluid" src="images/details-1-office-worker.svg" alt="alternative">
+                <img class="img-fluid" src="images/details-1-office-worker.svg" alt="alternative">
               </div> <!-- end of image-container -->
             </div> <!-- end of col -->
             <div class="col-lg-6">
                 <h2>Use Cases</h2>
 				<h5 class="text-center">Implementation</h5>
                 <p>The issuance and ownership of a Licence can be digitally represented on the Ethereum blockchain. </p>
-                    <p>Smart contracts can be used to embed regulatory requirements with respect to the relevant Licence in the blockchain. The Licence would be available electronically in the form of a token. This might be practically represented by a QR code, for example, displaying the current Licence information. The digital representation of the Licence would be stored in a digital wallet, typically an application on a smartphone or tablet computer. The proposed standard allows issuing authorities or regulators to amend, revoke or deny Licences from time to time, with the result of their determinations reflected in the Licence token in near real-time. Licence holders will therefore be notified almost instantly of any amendments, revocations or issues involving their Licence.</p>
-            <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-2 -->
-</div>
- <!-- end of testimonials -->
+                <p>Smart contracts can be used to embed regulatory requirements with respect to the relevant Licence in the blockchain. The Licence would be available electronically in the form of a token. This might be practically represented by a QR code, for example, displaying the current Licence information. The digital representation of the Licence would be stored in a digital wallet, typically an application on a smartphone or tablet computer. The proposed standard allows issuing authorities or regulators to amend, revoke or deny Licences from time to time, with the result of their determinations reflected in the Licence token in near real-time. Licence holders will therefore be notified almost instantly of any amendments, revocations or issues involving their Licence.</p>
+                <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of slider-2 -->
+    </div>
+    <!-- end of testimonials -->
 
 
     <!-- About -->
@@ -483,26 +475,25 @@
 
 
     <!-- Interface -->
-<div id="interface" class="form-2">
+    <div id="interface" class="form-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Interface</h2>
-				  <h3>interface EIP1753 { </h3>
-				  <h3> &nbsp; &nbsp;string public name;</h3>
-				  <h3> &nbsp; &nbsp;uint256 public totalSupply;</h3>
-				  <p>&nbsp;</p>
-<h3>&nbsp; &nbsp;function grantAuthority(address who); </h3>
-				  <h3> &nbsp;function revokeAuthority(address who); </h3>
-				  <h3>function hasAuthority(address who) pure public returns (bool); </h3>
-				  <h3>&nbsp;</h3>
-				  <h3>function issue(address who, uint256 from, uint256 to) public; </h3>
-				  <h3>function revoke(address who) public; </h3>
-				  <h3>&nbsp;</h3>
-				  <h3>function hasValid(address who) public view returns (boolean); </h3>
-				  <h3>function purchase(uint256 from, uint256 to) public payable; </h3>
-				  <h3>} </h3>
-				  <h3>pragma solidity ^0.5.3; </h3>
+				    <h3>interface EIP1753 { </h3>
+				    <h3>&nbsp; &nbsp;string public name;</h3>
+				    <h3>&nbsp; &nbsp;uint256 public totalSupply;</h3>
+                    <h3>&nbsp; &nbsp;function grantAuthority(address who); </h3>
+				    <h3> &nbsp;function revokeAuthority(address who); </h3>
+				    <h3>function hasAuthority(address who) pure public returns (bool); </h3>
+				    <h3>&nbsp;</h3>
+				    <h3>function issue(address who, uint256 from, uint256 to) public; </h3>
+				    <h3>function revoke(address who) public; </h3>
+				    <h3>&nbsp;</h3>
+				    <h3>function hasValid(address who) public view returns (boolean); </h3>
+				    <h3>function purchase(uint256 validFrom, uint256 validTo) public payable; </h3>
+				    <h3>} </h3>
+				  <!-- <h3>pragma solidity ^0.5.3; </h3>
 				  <h3>contract EIP is EIP1753 { </h3>
 				  <h3>string public name = "Kakadu National Park Camping Permit"; </h3>
 				  <h3>uint256 public totalSupply; </h3>
@@ -547,17 +538,13 @@
 				  <h3>require(hasAuthority(msg.sender) == true, "Only an authority can perform this function"); </h3>
 				  <h3>_; </h3>
 				  <h3>} </h3>
-				  <h3>}</h3>
-</div> <!-- end of col -->
+				  <h3>}</h3> -->
+            </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-
                 <div class="col-lg-6">
-                    
-                  
-
-              </div> <!-- end of col -->
-          </div> 
+                </div> <!-- end of col -->
+            </div> 
             <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-2 -->
@@ -578,9 +565,8 @@
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
-</div> <!-- end of copyright --> 
+    </div> <!-- end of copyright --> 
     <!-- end of copyright -->
-    
     	
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
