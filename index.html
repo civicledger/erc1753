@@ -312,32 +312,32 @@
                   <p class="text-left">- Callers MUST handle false from returns (bool success). Callers MUST NOT assume the false is never returned! </p>
                   <p class="text-left"><strong>name</strong>&nbsp;</p>
                   <p class="text-left"> Returns the name of the permit - e.g. "MyPermit". </p>
-                  <h3 class="text-left">function name() public view returns (string) </h3>
+                  <h3 class="text-left">function name() public view returns (string)</h3>
 <p class="text-left"><strong>totalSupply </strong> </p>
                   <p class="text-left">Returns the total permit supply. </p>
-                  <h3 class="text-left">function totalSupply() public view returns (uint256) </h3>
+                  <h3 class="text-left">function totalSupply() external view returns (uint256)</h3>
 <p class="text-left"><strong>grantAuthority </strong> </p>
                   <p class="text-left">Adds an ethereum address to a white list of addresses that have authority to modify a permit. </p>
-                  <h3 class="text-left">function grantAuthority(address who) </h3>
+                  <h3 class="text-left">function grantAuthority(address who) external</h3>
 <p class="text-left"><strong>revokeAuthority </strong> </p>
                   <p class="text-left">Removes an ethereum address from a white list of addresses that have authority to modify a permit. </p>
-                  <h3 class="text-left">function revokeAuthority(address who) </h3>
+                  <h3 class="text-left">function revokeAuthority(address who) external</h3>
 <p class="text-left"><strong>hasAuthority </strong> </p>
                   <p class="text-left">Checks to see if the address has authority to grant or revoke permits. </p>
-                  <h3 class="text-left">function hasAuthority(address who) </h3>
+                  <h3 class="text-left">function hasAuthority(address who) external</h3>
 <p class="text-left"><strong>issue </strong> </p>
                   <p class="text-left">Issues an ethereum address a permit between the specified date range. </p>
-                  <h3 class="text-left">function issue(address who, uint256 from, uint256 to) public; </h3>
+                  <h3 class="text-left">function issue(address who, uint256 from, uint256 to) external</h3>
 <p class="text-left"><strong>revoke </strong> </p>
                   <p class="text-left">Revokes a permit from an ethereum address. </p>
-                  <h3 class="text-left">function revoke(address who) public; </h3>
+                  <h3 class="text-left">function revoke(address who) external</h3>
 <p class="text-left"><strong>hasValid </strong> </p>
                   <p class="text-left">Checks to see if an ethereum address has a valid permit. </p>
-                  <h3 class="text-left">function hasValid(address who) public view returns (boolean); </h3>
+                  <h3 class="text-left">function hasValid(address who) external view returns (bool) </h3>
 <p class="text-left"><strong>purchase </strong> </p>
                   <p class="text-left">Allows a user to self procure a licence. </p>
-                  <h3 class="text-left">function purchase(uint256 from, uint256 to) public payable;</h3>
-<p class="text-left">&nbsp;</p>
+                  <h3 class="text-left">function purchase(uint256 from, uint256 to) external payable</h3>
+                <p class="text-left">&nbsp;</p>
                 </div>
                 <!-- end of col -->
             </div> <!-- end of row -->            <!-- end of row -->
@@ -484,11 +484,11 @@
 				    <h3>&nbsp; &nbsp;string public name;</h3>
 				    <h3>&nbsp; &nbsp;uint256 public totalSupply;</h3>
                     <h3>&nbsp; &nbsp;function grantAuthority(address who) external;</h3>
-				    <h3> &nbsp;function revokeAuthority(address who) external;</h3>
+				    <h3>&nbsp; &nbsp;function revokeAuthority(address who) external;</h3>
 				    <h3>&nbsp; &nbsp;function hasAuthority(address who) external returns (bool);</h3>
 				    <h3>&nbsp;</h3>
-				    <h3>function issue(address who, uint256 from, uint256 to) external; </h3>
-				    <h3>function revoke(address who) external; </h3>
+				    <h3>&nbsp; &nbsp;function issue(address who, uint256 from, uint256 to) external; </h3>
+				    <h3>&nbsp; &nbsp;function revoke(address who) external; </h3>
 				    <h3>&nbsp;</h3>
 				    <h3>&nbsp; &nbsp;function hasValid(address who) external view returns (bool); </h3>
 				    <h3>&nbsp; &nbsp;function purchase(uint256 validFrom, uint256 validTo) public payable;</h3>
